@@ -1,0 +1,361 @@
+html, body {
+    font-size: 18px;
+    color: #fff;
+    background: url(../img/cloud-background.png) repeat #BF121C;
+    font-family: 'Open Sans', Helvetiva, Arial, sans-serif;
+    font-weight: 300;
+    animation: cloud-animation;
+    animation-duration: 320s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-animation {
+    from {background-position: center 0;}
+    to {background-position: 13000px 10000px;}
+}
+
+.container-logo {
+    margin: 0 auto;
+    margin-top: 50px;
+    display: table;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.introduction-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.introduction-description {
+    width: 675px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-tree {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+}
+
+.product-tree:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 15px;
+    background: #fff;
+    margin:  0 auto;
+}
+
+.product-tree ul {
+    display: table;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.product-tree li { 
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.product-tree li.separator {
+    width: 200px;
+    display: block;
+}
+
+.product-tree li.separator:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+}
+
+.product-tree li:first-child { 
+    border-top: none;
+    min-width: 322px;
+    display: block;
+    background: url(../img/tree-left.png) no-repeat 155px 0;
+    min-height: 40px;
+}
+
+.product-tree li:first-child:before {
+    content: "";
+    display: block;
+    height: 2px;
+    margin-left: 70%;
+    background: #fff;
+}
+
+.product-tree li:last-child { 
+    border-top: none;
+    min-width: 322px;
+    display: block;
+    background: url(../img/tree-right.png) no-repeat 70px 0;
+    min-height: 40px;
+}
+
+.product-tree li:last-child:before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 30%;
+    background: #fff;
+}
+
+.product-tree li.product {
+    width: 270px;
+}
+
+.product-tree .product .product-icon {
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    padding: 10px;
+    border: 2px solid #fff;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 43px;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    background: #BF121C;
+}
+
+.product-tree .product:hover .product-icon {
+    background: #fff;
+}
+
+.product-tree .product .product-icon img {
+    width: 115px;
+    height: 115px;
+    margin-top: 10px;
+}
+
+.product-tree .product .product-icon img.normal {
+    display: block;
+}
+
+.product-tree .product:hover .product-icon img.normal {
+    display: none;
+}
+
+.product-tree .product .product-icon img.hover {
+    display: none;
+}
+
+.product-tree .product:hover .product-icon img.hover {
+    display: block;
+}
+
+.product-tree .product h3 {
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+
+.product-tree .product p {
+    font-size: 16px;
+}
+
+.product-tree .product .more-button {
+    display: table;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 35px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 40px;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    -moz-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    background: #BF121C;
+    color: #fff;
+}
+
+.product-tree .product .more-button:before {
+    content: "";
+    display: none;
+    background: url(../img/arrow-button-right.png) no-repeat center center;
+    width: 9px;
+    height: 100%;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.product-tree .product:hover .more-button  {
+    padding: 10px 55px 10px 35px;
+    background: #fff;
+    color: #BF121C;
+}
+
+.product-tree .product:hover .more-button:before {
+    display: block;
+}
+
+.product-tree .product .overlay-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.footer {
+    font-size: 12px;
+    line-height: 20px;
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.footer .extra-list {
+    padding: 0;
+    list-style: none;
+    margin-left: -30px;
+    clear: both;
+}
+
+.footer .extra-list li {
+    float: left;
+    margin-right: 9px;
+}
+
+.footer .extra-list a {
+    color: #fff;
+}
+
+.footer .contact-list .icon-phone {
+    height: 20px;
+    padding-left: 25px;
+    background: url(../img/phone-icon.png) no-repeat 4px center;
+}
+
+.footer .contact-list .icon-mail {
+    height: 20px;
+    padding-left: 25px;
+    background: url(../img/mail-icon.png) no-repeat 4px center;
+}
+
+/* Responsive */
+
+@media all and (max-width: 995px) {
+    
+    .product-tree:before {
+        display: none;
+    }
+    
+    .product-tree li.separator { 
+        width: 2px;
+        margin: 0 auto;
+    }
+    
+    .product-tree li.separator:before { 
+        height: 30px;
+        background: transparent;
+    }
+    
+    .product-tree li.product { 
+        margin-right: 30px;
+        background: transparent;
+    }
+    
+    .product-tree li.product:last-child {
+        margin-right: 0;
+    }
+    
+    .product-tree li.product:before { 
+        display: none;
+    }
+    
+    .product-tree li.product .product-icon {
+        margin-top: 0;
+    }
+    
+    .footer {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .footer .copy-info {
+        text-align:  center;
+    }   
+    
+    .footer .extra-list {
+        display: table;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .footer .extra-list li {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 891px) {
+    
+    body {
+        background: #BF121C;
+    }
+    
+    .introduction-description {
+        width: 100%;
+    }
+    
+    .product-tree li { 
+        float: none;
+    }
+    
+    .product-tree li.product { 
+        width: 100%;
+        margin-right: 0;
+    }
+    
+}
+
+@media all and (max-width: 410px) {
+    
+    .footer {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .footer .copy-info {
+        text-align:  center;
+    }   
+    
+    .footer .extra-list {
+        display: table;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .footer .extra-list li {
+        float: none;
+        margin-bottom: 5px;
+    }
+}
